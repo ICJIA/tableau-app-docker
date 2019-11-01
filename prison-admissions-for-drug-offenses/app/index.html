@@ -59,7 +59,13 @@
       flex: 1 0 auto;
       margin: auto;
       margin-top: 72px;
-      max-width: 100%;
+      margin-bottom: 32px;
+    }
+    main iframe {
+      display: block;
+      width: 1000px;
+      height: 1175px;
+      border: none;
     }
     footer {
       position: absolute;
@@ -70,7 +76,7 @@
       bottom: 0;
       min-width: 1000px;
       background-color: rgba(27, 31, 35, 0.05);
-      padding: 6px 16px;
+      padding: 6px 0;
       text-align: center;
     }
   </style>
@@ -88,55 +94,9 @@
       </div>
     </header>
     <main>
-      <center>
-        <div
-          class="tableauPlaceholder"
-          id="viz1539119264099"
-          style="position: relative; width: 1000px; height: 1175px; overflow: hidden; display: block;"
-        >
-          <noscript>
-            <a href="#">
-              <img
-                alt=" "
-                src="https://public.tableau.com/static/images/Il/IllinoisPrisonAdmissionsforDrugs/ILDrugAdmits-Snapshot/1_rss.png"
-                style="border: none"
-              />
-            </a>
-          </noscript>
-          <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
-          <iframe
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="Data Visualization"
-            allowtransparency="true"
-            allowfullscreen="true"
-            class="tableauViz"
-            style="display: block;width: 1000px;height: 1127px;margin: 0px;padding: 0px;border: none;"
-            src="https://public.tableau.com/views/IllinoisPrisonAdmissionsforDrugs/ILDrugAdmits-Snapshot?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=yes&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=1"
-          ></iframe>
-        </div>
-        <script type="text/javascript">
-          var divElement = document.getElementById("viz1539119264099");
-          var vizElement = divElement.getElementsByTagName("object")[0];
-
-          if (divElement.offsetWidth > 800) {
-            vizElement.style.width = "1000px";
-            vizElement.style.height = "1175px";
-          } else if (divElement.offsetWidth > 500) {
-            vizElement.style.width = "1000px";
-            vizElement.style.height = "1175px";
-          } else {
-            vizElement.style.width = "100%";
-            vizElement.style.height = "1594px";
-          }
-
-          var scriptElement = document.createElement("script");
-          scriptElement.src =
-            "https://public.tableau.com/javascripts/api/viz_v1.js";
-          vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
-      </center>
+      <iframe
+        src="https://public.tableau.com/views/IllinoisPrisonAdmissionsforDrugs/ILDrugAdmits-Snapshot?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=yes&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=1"
+      ></iframe>
     </main>
     <footer>
       © 2018
