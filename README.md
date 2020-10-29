@@ -7,9 +7,9 @@ Each subdirectory contains a minimal Node.js app serving a Tableau dashboard ins
 In app directory with `Dockerfile`:
 
 ```
-docker build --tag icjia/[filename_here] .
+docker build --tag icjia/[filename] .
 ```
 
 ```
-docker push icjia/[filename_here]
+docker push icjia/[filename]
 ```
